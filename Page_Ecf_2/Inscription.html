@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+    
+
+    <head>
+
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="Stylesheet_Ecf_2.css">
+        <script src="Js_Ecf_2.js" type="text/javascript"></script>
+        <title>Restaurant Quai Antique - Inscription</title>
+
+    </head>
+
+    <body>
+
+        <!-- This part is for Navbar at the top -->
+
+        <div class="Navigation_Bar">
+
+            <div class="Logo_Navigation_Bar">
+                <a href="index.html"><img height="120" width="90%" src="Logo_Ecf_modif.png"></a>
+            </div>
+            <div class="Dish_Navigation_Bar"><a href="Carte_Menu.html">Carte et Menu</a></div>
+            <div class="Reservation_Navigation_Bar"><a href="#">Réserver</a></div>
+            <div class="Connexion_Navigation_Bar"><button onclick="openForm()" style="border: none; background-color: #B6AC97;"><a href="#">Connexion</a></button></div>
+            <div class="form-popup" id="popupForm">
+                <form method="post" action="action_connexion.php" class="ConnexionForm ConnexionBox form">
+
+                    <h1 class="ConnexionTitle" style="text-align: center;">Connexion</h1>
+                    
+                    <input type="text" class="ConnexionInput" name="mail" placeholder="Adresse mail">
+                    <input type="text" class="ConnexionInput" name="password" placeholder="Mot de passe">
+                    <input type="submit" class="ConnexionButton" name="submit" value="Connexion">
+            
+                    <p class="ConnexionNouveau">
+                      Pas encore inscrit ? <a href="Page Formulaire inscription TLM VS.html">Accès à notre page d'inscription !</a>
+                    </p>
+            
+                    <button type="button" class="Connexion_Close" onclick="closeForm()">Fermer</button>
+                </form>
+            </div>
+            <div class="Inscription_Navigation_Bar"><a href="#">Inscription</a></div>
+            
+        </div>
+
+        <!-- This part is for inscription form -->
+        
+        <div class="Inscription_Form">
+        
+            <form method="post" action="action_inscription.php" class="Inscripton_Form_supp form">
+
+                <h1 class="ConnexionTitle" style="text-align: center;">Inscription</h1>
+                
+                <input type="text" class="ConnexionInput" name="mail" placeholder="Adresse mail" required>
+                <input type="text" class="ConnexionInput" name="password" placeholder="Mot de passe" required>
+                <input type="text" class="ConnexionInput" name="allergy" placeholder="Allergies alimentaires">
+                <input type="number" class="ConnexionInput" name="Guest_Number" placeholder="Nombre de convive par défaut" required>
+                
+                <input type="submit" class="ConnexionButton" name="submit" value="Inscription">
+        
+            </form>
+        
+        </div>
+        
+        
+        
+        
+        
+        
+        <!-- This part is for opening schedule at bottom -->
+
+        <div class="Footer_Timesheet">
+            
+            <div class="Tittle_Timesheet">
+                <h1 style="color: red;"> Nos </h1>
+                <h1 style="font-family:'Segoe Print',fantasy;"> Horaires d'ouverture</h1>
+                <h1 style="border-bottom: 3px solid rgba(255, 0, 0, 0.800); color: white;">BLA</h1>
+            </div>
+
+            <div class="Day_Timesheet">
+                <div class="Day_Name"><p>Lundi</p></div>
+                <div class="Day_Schedules"><p style="color:crimson;">12:00 - 14:00 <br> 19:00 - 22:00</p></div>
+            </div>
+
+            <div class="Day_Timesheet">
+                <div class="Day_Name"><p>Mardi</p></div>
+                <div class="Day_Schedules"><p style="color:crimson;">12:00 - 14:00 <br> 19:00 - 22:00</p></div>
+            </div>
+
+            <div class="Day_Timesheet">
+                <div class="Day_Name"><p>Mercredi</p></div>
+                <div class="Day_Schedules"><p style="color:crimson;">Fermé</p></div>
+            </div>
+
+            <div class="Day_Timesheet">
+                <div class="Day_Name"><p>Jeudi</p></div>
+                <div class="Day_Schedules"><p style="color:crimson;">12:00 - 14:00 <br> 19:00 - 22:00</p></div>
+            </div>
+
+            <div class="Day_Timesheet">
+                <div class="Day_Name"><p>Vendredi</p></div>
+                <div class="Day_Schedules"><p style="color:crimson;">12:00 - 14:00 <br> 19:00 - 22:00</p></div>
+            </div>
+
+            <div class="Day_Timesheet">
+                <div class="Day_Name"><p>Samedi</p></div>
+                <div class="Day_Schedules"><p style="color:crimson;">19:00 - 23:00</p></div>
+            </div>
+
+            <div class="Day_Timesheet">
+                <div class="Day_Name"><p>Dimanche</p></div>
+                <div class="Day_Schedules"><p style="color:crimson;">12:00 - 14:00</p></div>
+            </div>
+
+
+        </div>
+
+    </body>
+
+
+
+</html>
